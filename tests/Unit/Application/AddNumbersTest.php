@@ -12,6 +12,11 @@ class AddNumbersTest extends TestCase
 {
     private AddNumbersService $service;
 
+    public function testDifferentLengthLimiters()
+    {
+        $this->assertEquals(6, $this->service->add("//[***]\n1***2***3"));
+    }
+
     /**
      * @test
      *
