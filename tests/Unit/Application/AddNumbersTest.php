@@ -12,6 +12,31 @@ class AddNumbersTest extends TestCase
 {
     private AddNumbersService $service;
 
+    /**
+     * @test
+     *
+     * @throws NegativesNotAllowedException
+     */
+    public function testMultipleDifferentLongerLimiters()
+    {
+        $this->assertEquals(6, $this->service->add("//[****][%%%%]\n1****2%%%%3"));
+    }
+
+    /**
+     * @test
+     *
+     * @throws NegativesNotAllowedException
+     */
+    public function testMultipleDifferentLimiters()
+    {
+        $this->assertEquals(6, $this->service->add("//[*][%]\n1*2%3"));
+    }
+
+    /**
+     * @test
+     *
+     * @throws NegativesNotAllowedException
+     */
     public function testDifferentLengthLimiters()
     {
         $this->assertEquals(6, $this->service->add("//[***]\n1***2***3"));

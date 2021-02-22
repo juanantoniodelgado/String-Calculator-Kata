@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17c4002a-1fef-4778-9fc1-8906817cc42a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application/AddNumbersService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/AddNumbersService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Unit/Application/AddNumbersTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Application/AddNumbersTest.php" afterDir="false" />
@@ -11,7 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -89,7 +90,8 @@
       <option name="presentableId" value="Default" />
       <updated>1613996637467</updated>
       <workItem from="1613996643588" duration="1077000" />
-      <workItem from="1613997733992" duration="10442000" />
+      <workItem from="1613997733992" duration="11915000" />
+      <workItem from="1614026279222" duration="1055000" />
     </task>
     <task id="LOCAL-00001" summary="Step 4 completed">
       <created>1614005845359</created>

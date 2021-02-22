@@ -47,14 +47,30 @@ class AddNumbersService
     private function parse(string $numbers): array
     {
         if (str_starts_with($numbers, '//')) {
-            $delimiter = substr($numbers, 2, strpos($numbers, "\n") -2);
+            $delimiters = substr($numbers, 2, strpos($numbers, "\n") -2);
             $numbers = substr($numbers, strpos($numbers, "\n"));
 
-            if (substr_count($delimiter, '[') === 1) {
-                $delimiter = substr($delimiter, 1, -1);
-            }
+            if (substr_count($delimiters, '[') > 1) {
 
-            $numbers = str_replace($delimiter, self::SEPARATOR, $numbers);
+                $delimiters = str_replace('][', ',', $delimiters);
+                $delimiters = str_replace('[', '', $delimiters);
+                $delimiters = str_replace(']', '', $delimiters);
+
+                $delimiters = explode(',', $delimiters);
+
+                foreach ($delimiters as $delimiter) {
+
+                    $numbers = str_replace($delimiter, self::SEPARATOR, $numbers);
+                }
+
+            } else {
+
+                if (substr_count($delimiters, '[') === 1) {
+                    $delimiters = substr($delimiters, 1, -1);
+                }
+
+                $numbers = str_replace($delimiters, self::SEPARATOR, $numbers);
+            }
         }
 
         $numbers = str_replace("\n", self::SEPARATOR, $numbers);
