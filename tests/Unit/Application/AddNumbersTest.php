@@ -14,6 +14,18 @@ class AddNumbersTest extends TestCase
 
     /**
      * @test
+     *
+     * @throws NegativesNotAllowedException
+     */
+    public function testIgnoreNumbersOver1000()
+    {
+        $this->assertEquals(2, $this->service->add("2,1000"));
+    }
+
+    /**
+     * @test
+     *
+     * @throws NegativesNotAllowedException
      */
     public function testNegativesNotAllowedException()
     {
@@ -23,6 +35,8 @@ class AddNumbersTest extends TestCase
 
     /**
      * @test
+     *
+     * @throws NegativesNotAllowedException
      */
     public function testDifferentLimiter()
     {
@@ -31,6 +45,8 @@ class AddNumbersTest extends TestCase
 
     /**
      * @test
+     *
+     * @throws NegativesNotAllowedException
      */
     public function testNewLines()
     {
@@ -39,6 +55,8 @@ class AddNumbersTest extends TestCase
 
     /**
      * @test
+     *
+     * @throws NegativesNotAllowedException
      */
     public function testMultipleAddition()
     {
@@ -47,6 +65,8 @@ class AddNumbersTest extends TestCase
 
     /**
      * @test
+     *
+     * @throws NegativesNotAllowedException
      */
     public function testSingleAddition()
     {
@@ -55,6 +75,8 @@ class AddNumbersTest extends TestCase
 
     /**
      * @test
+     *
+     * @throws NegativesNotAllowedException
      */
     public function testSingleNumber()
     {
@@ -63,6 +85,8 @@ class AddNumbersTest extends TestCase
 
     /**
      * @test
+     *
+     * @throws NegativesNotAllowedException
      */
     public function testEmpty()
     {

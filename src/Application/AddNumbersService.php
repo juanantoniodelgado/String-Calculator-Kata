@@ -32,10 +32,11 @@ class AddNumbersService
             $numbers = explode($delimiter, $numbers);
 
             foreach ($numbers as $number) {
-                if (intval($number) < 0) {
+                $number = intval($number);
+                if ($number < 0) {
                     $errorPool[] = $number;
-                } else {
-                    $result += intval($number);
+                } else if ($number<1000){
+                    $result += $number;
                 }
             }
 
