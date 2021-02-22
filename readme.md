@@ -4,11 +4,13 @@ _This project is a TDD Kata made to improve your code, your refactor and test-fi
 
 _Idea from [Roy Osherove](https://osherove.com/tdd-kata-1/)_.
 
-## Before you start 🚀
+## Before you start 📋
 
 1. Try not to read ahead.
 2. Do one task at a time. The trick is to learn to work incrementally.
 3. Make sure you only test for correct inputs. There is no need to test for invalid inputs for this kata.
+
+## Here we go!! 🚀
 
 #### Step 1
 Create a simple string calculator with a method signature:
