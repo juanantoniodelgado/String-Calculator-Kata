@@ -17,13 +17,13 @@ Create a simple string calculator with a method signature:
     public function add (string $numbers): int
 ```
 
-The method can take up to **two numbers**, separated by commas, and will return their sum.
-I.E: "" or "1" or 1,2" as inputs. (empty strings will return 0)
+- The method can take up to **two numbers**, separated by commas, and will return their sum. I.E: "" or "1" or 1,2" as inputs. 
+- Empty strings will return 0.
 
 ##### Hints
-- Start with the simplest test case of an empty string and move to one and two numbers
-- Remember to solve things as simply as possible so that you force yourself to write tests you did not think about
-- Remember to refactor after each passing test
+- Start with the simplest test case of an empty string and move to one and two numbers.
+- Remember to solve things as simply as possible so that you force yourself to write tests you did not think about.
+- Remember to refactor after each passing test.
 
 #### Step 2
 Allow the add method to handle an unknown amount of numbers.
@@ -65,7 +65,7 @@ Calling add with a negative number will throw an exception called NegativesNotAl
 Numbers bigger than 1000 should be ignored, so adding 2 + 1001 will return 2.
 
 #### Step 7
-Delimiters can be of any length with the following format: “//[delimiter]\n” for example: “//[***]\n1***2***3” should return 6
+Delimiters can be of any length with the following format: “//[delimiter]\n” for example: “//[***]\n1***2***3” should return 6.
 
 #### Step 8
 Allow multiple delimiters like this:
