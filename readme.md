@@ -38,7 +38,7 @@ The following input is _ok_:
 
 The following input is _NOT ok_:
 ```
-    "1,\n" (not need to prove it - just clarifying)
+    "1,\n" //not need to prove it - just clarifying
 ```
 
 #### Step 4
