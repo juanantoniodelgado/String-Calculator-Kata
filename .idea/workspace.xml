@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17c4002a-1fef-4778-9fc1-8906817cc42a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,7 @@
       <updated>1613996637467</updated>
       <workItem from="1613996643588" duration="1077000" />
       <workItem from="1613997733992" duration="11915000" />
-      <workItem from="1614026279222" duration="4789000" />
+      <workItem from="1614026279222" duration="5399000" />
     </task>
     <task id="LOCAL-00001" summary="Step 4 completed">
       <created>1614005845359</created>

@@ -48,22 +48,18 @@ Provide support for different delimiters.
 To change a delimiter, the beginning of the string will contain a separate line that looks like this:
 
 ```
-		"//[delimiter]\n[numbers…]"
+    "//[delimiter]\n[numbers…]"
 ```
 
 I.E: "//;\n1;2" should return three where the default delimiter is ";".
 
 - This first line is optional.
-- All existing scenarios should still be supported
+- All existing scenarios should still be supported.
 
 #### Step 5
 Calling add with a negative number will throw an exception called NegativesNotAllowedException and the negative that was passed.
 - If there are multiple negatives, _show all of them_ in the exception message.
 
-
-----
-⚠️ **STOP HERE if you are a beginner. Continue if you can finish each of the steps so far in less than 30 minutes.** ⚠️
-----
 
 #### Step 6
 Numbers bigger than 1000 should be ignored, so adding 2 + 1001 will return 2.
@@ -73,9 +69,9 @@ Delimiters can be of any length with the following format: “//[delimiter]\n”
 
 #### Step 8
 Allow multiple delimiters like this:
-
-		//[delim1][delim2]\n” 
-
+```
+    "//[delim1][delim2]\n" 
+```
 I.E: "//[*][%]\n1*2%3" should return 6.
 
 #### Step 9
