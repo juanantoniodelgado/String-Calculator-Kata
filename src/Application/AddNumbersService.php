@@ -12,7 +12,9 @@ class AddNumbersService
 
         if (!empty($numbers)) {
 
-            $numbers = explode(',', $numbers);
+            $numbers = preg_split('/[\n|,]/', $numbers);
+
+            dump($numbers);
 
             foreach($numbers as $number) {
                 $result += intval($number);

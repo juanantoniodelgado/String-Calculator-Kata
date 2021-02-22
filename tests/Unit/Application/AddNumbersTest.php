@@ -14,6 +14,14 @@ class AddNumbersTest extends TestCase
     /**
      * @test
      */
+    public function testNewLines()
+    {
+        $this->assertEquals(3, $this->service->add("1\n1,1"));
+    }
+
+    /**
+     * @test
+     */
     public function testMultipleAddition()
     {
         $this->assertEquals(3, $this->service->add('1,1,1'));
