@@ -5,11 +5,21 @@ declare(strict_types=1);
 namespace App\Tests\Unit\Application;
 
 use App\Application\AddNumbersService;
+use App\Exception\NegativesNotAllowedException;
 use PHPUnit\Framework\TestCase;
 
 class AddNumbersTest extends TestCase
 {
     private AddNumbersService $service;
+
+    /**
+     * @test
+     */
+    public function testNegativesNotAllowedException()
+    {
+        $this->expectException(NegativesNotAllowedException::class);
+        $this->service->add('1,-1,2,-3');
+    }
 
     /**
      * @test
