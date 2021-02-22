@@ -14,6 +14,14 @@ class AddNumbersTest extends TestCase
     /**
      * @test
      */
+    public function testDifferentLimiter()
+    {
+        $this->assertEquals(3, $this->service->add("//;\n1;2"));
+    }
+
+    /**
+     * @test
+     */
     public function testNewLines()
     {
         $this->assertEquals(3, $this->service->add("1\n1,1"));
